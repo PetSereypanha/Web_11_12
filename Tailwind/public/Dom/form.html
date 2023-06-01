@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../output.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="h-screen bg-slate-500 pl-[30rem] pt-[10rem]">
+        <form class="w-full max-w-sm h-[15rem] ">
+            <div class="flex items-center mb-3">
+                <div class="w-1/3">
+                    <label class="text-white font-extrabold text-right " for="fullname">Full Name</label>
+                </div>
+                <div class="w-2/3">
+                    <input id="fullname" class="w-full bg-gray-200 appearance-none border-2 border-gray-600
+                                                 rounded-xl py-2 px-4 focus:outline-none focus:bg-white
+                                                 focus:border-purple-500" type="text">
+                </div>
+            </div>
+            <div class="flex items-center mb-6">
+                <div class="w-1/3">
+                    <label class="text-white font-extrabold text-right " for="pass">Password</label>
+                </div>
+                <div class="w-2/3">
+                    <input id="pass" class="w-full bg-gray-200 appearance-none border-2 border-gray-600 
+                                            rounded-xl py-2 px-4 focus:outline-none focus:bg-white
+                                            focus:border-purple-500" placeholder="****************" type="password">
+                </div>
+            </div>
+            <div class="flex items-center justify-center">
+                <div class="w-[15rem] flex justify-evenly">
+                    <button onclick="Show()" class="shadow-lg bg-purple-500 hover:bg-purple-950 focus:shadow-inner 
+                                                    focus:outline-none text-white font-light py-2 px-3 rounded-xl " 
+                    type="button">Submit</button>
+
+                    <button onclick="ref()" class="shadow-lg bg-sky-500 hover:bg-sky-950 focus:shadow-inner 
+                                                    focus:outline-none text-white font-light py-2 px-3 rounded-xl " 
+                    type="button">Refresh</button>
+                </div>
+            </div>
+        </form>
+        <div class="w-[24rem] mt-5">
+            <table class="w-full"> 
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Password</th>
+                    </tr>
+                </thead>
+                <tbody  id="tb">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script>
+    function Show(){
+        var name = document.querySelector('#fullname').value;
+        var pass = document.querySelector('#pass').value;
+        var text = document.querySelector('#tb');
+        text.innerHTML = text.innerHTML + "<tr class='text-white'> <th>"+ name +"</th><th>"+ pass +"</th></tr>";
+    }
+    function ref(){
+        name = document.querySelector('#fullname').value = "";
+        pass = document.querySelector('#pass').value = "";
+    }
+</script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../output.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+  .box{
+    width: 30rem;
+    height: 10rem;
+    background: #2777a5;
+    transition:  1s linear;
+  }
+  .show{
+    height: 50rem;
+    transition:  1s linear;
+  }
+</style>
+<body>
+    <div class="box">
+        <i class="fa-solid fa-caret-right float-right text-4xl text-white mt-[3.4rem] w-10 duration-1000"></i>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        var i=0;
+        $('i').click(function(){
+            if(i == 0){
+                $(this).addClass('rotate-90');
+                $('.box').addClass('show');
+                i=1;
+            }
+            else{
+                $(this).removeClass('rotate-90');
+                $('.box').removeClass('show');
+                i=0;
+            }
+        })
+    })
+</script>
+</html>

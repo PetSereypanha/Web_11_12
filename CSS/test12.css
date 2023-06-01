@@ -1,0 +1,18 @@
+#float{
+    width: 200px;
+    height: 200px;
+    background-color: #453445;
+    float: left;
+}
+#float1{
+    width: 200px;
+    height: 200px;
+    background-color: #de1cde;
+    float: left;
+}
+#float2{
+    width: 200px;
+    height: 200px;
+    background-color: #344539;
+    float: left;
+}

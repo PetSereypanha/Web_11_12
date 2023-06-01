@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#main{
+    width: 50%;
+    height: 200px;
+    background-color: #e4e4e4;
+    transition: 5s;
+}
+#main:hover{
+    background-color: hotpink;
+    transition: 3s;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+ul{
+    display: flex;
+}
+li{
+    display: block;
+    padding-left: 40px;
+}
+a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    transition: 3s;
+
+}
+a:hover{
+    color: blue;
+    transition: 3s;
+    font-size: 40px;
+}

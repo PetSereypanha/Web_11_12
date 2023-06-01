@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+.main{
+    width: 700px;
+    height: 600px;
+    border: 2px solid black;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: red;
+}
+.header img{
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: #eee;
+}
+.navbar nav{
+    display: flex;
+    justify-content: space-between;
+}
+.home{
+    display: flex;
+}
+.home li{
+    margin-top: 10px;
+    margin-left: 30px;
+    display: block;
+}
+.home li:hover{
+    transform: scale(1.25);
+    transition: 1s;
+}
+.home a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    transition: 1s;
+}
+.home a:hover{
+    color: #32d77f;
+}
+.search{
+    display: flex;
+}
+.search li{
+    margin-right: 15px;
+    margin-top: 10px;
+    display: block;
+}
+.search .in{
+    width: 150px;
+    height: 20px;
+    border: none;
+    border-radius: 3px;
+}
+.search .btn{
+    border: none;
+    background-color: #51a4ce;
+    border-radius: 3px;
+    width: 50px;
+    height: 20px;
+    color: #b3ea4d;
+    transition: 1.5s;
+}
+.search .btn:hover{
+    background-color: #eee;
+    border: 1px solid #51a4ce;
+    color: #000;
+    transition: 1.5s;
+}
+.contener{
+    width: 100%;
+    height: 420px;
+    display: flex;
+}
+.contener .box1{
+    height: 100%;
+    width: 25%;
+}
+.contener .box1 img{
+    width: 100%;
+    margin-top: 140px;
+}
+.contener .box2{
+    height: 100%;
+    width: 50%;
+}
+.contener .box2 .bb1{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contener .box2 .bb2{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contener .box2 .bb2 p{
+    color: #d69fe5;
+    font-size: 15px;
+}
+.contener .box2  .bb3{
+    width: 100%;
+    height: 30%;
+}
+.contener .box2  .bb3 img{
+    margin-left: 5%;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    margin-bottom: 10%;
+}
+.contener .box3{
+    height: 100%;
+    width: 25%;
+}
+.contener .box3 iframe{
+    width: 100%;
+    margin-top: 50px;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+}
+.footer img{
+    width: 100%;
+    height: 100%;
+}

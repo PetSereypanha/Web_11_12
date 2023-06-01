@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 40rem;
+        height: 40rem;
+        background-color: violet;
+        margin: 4rem ;
+    }
+    button{
+        margin: 3rem;
+        width: 10rem;
+        height: 3rem;
+    }
+</style>
+<body>
+    <div class="box"></div>
+    <button class="hide">Hide</button>
+    <button class="show">Show</button>
+    <button class="fadein">FadeIn</button>
+    <button class="fadeout">FadeOut</button>
+    <button class="slideup">SlideUp</button>
+    <button class="slidedown">slideDown</button>
+    <button class="toggle">Toggle</button>
+    <button class="fadetoggle">FadeToggle</button>
+    <button class="slidetoggle">SlideToggle</button>
+    <button class="animetion">Animetion</button>
+    <button class="claining">addtime</button>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.hide').click(function(){
+            $('.box').hide(4000);
+        })
+        $('.show').click(function(){
+            $('.box').show(4000);
+        })
+        $('.fadein').click(function(){
+            $('.box').fadeIn(2000);
+        })
+        $('.fadeout').click(function(){
+            $('.box').fadeOut(2000);
+        })
+        $('.slideup').click(function(){
+            $('.box').slideUp(2000);
+        })
+        $('.slidedown').click(function(){
+            $('.box').slideDown(2000);
+        })
+        $('.toggle').click(function(){
+            $('.box').toggle(2000);
+        })
+        $('.fadetoggle').click(function(){
+            $('.box').fadeToggle(2000);
+        })
+        $('.slidetoggle').click(function(){
+            $('.box').slideToggle(2000);
+        })
+        $('.animation').click(function(){
+            $('.box').animate({width: '60rem',opacity: '0.4'});
+        })
+        $('.animation').click(function(){
+            $('.box');
+        })
+        $('.claining').click(function(){
+            $('.box').animate({width: '60rem',opacity: '0.4'}).slideToggle(2000);
+        })
+    })
+</script>
+</html>

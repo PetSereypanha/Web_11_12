@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Name">
+    <input type="button" value="Save" onclick="Save_Txt()">
+    <p id="demo"></p>
+</body>
+<script>
+    var i =1;
+    function Save_Txt(){
+        var txt_name = document.getElementById('name');
+        document.getElementById("demo").innerHTML += (i++) + '. '+txt_name.value +'<br/>';
+        txt_name.value = '';
+    }
+</script>
+</html>
